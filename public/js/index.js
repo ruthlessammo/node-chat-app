@@ -31,13 +31,6 @@ socket.on('newLocationMessage', function(message) {
     from: message.from,
     createdAt: formattedTime
   });
-  // const li = $('<li></li>');
-  // const a = $('<a target="_blank">My current location</a> ');
-  //
-  //
-  // li.text(`${message.from}: ${formattedTime} `);
-  // a.attr('href', message.url);
-  // li.append(a);
 
   $('#messages').append(html);
 });
